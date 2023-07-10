@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Kablammo&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* font-size: 16px; */
+  /* width: 50vw; */
+}
+
+#titre-principal {
+  text-transform: uppercase;
+  /* width: 100vw; */
+  /* height: 200px; */
+  text-align: center;
+  font-family: "Kablammo", cursive;
+
+  display: block;
+}
+
+.titre {
+  font-weight: bolder;
+}
+
+h1 {
+  color: darkkhaki;
+  background-color: lightblue;
+}
+
+h1 span {
+  margin: 0 auto;
+}
+
+p {
+  text-align: justify;
+}
+
+#architecto {
+  font-style: italic;
+  color: teal;
+  text-decoration: underline;
+}
+
+.image {
+  width: 200px;
+  border-radius: 50%;
+  border: 3px solid lightslategrey;
+}
+
+.image:hover {
+  border-color: orange;
+}
+
+.lien-moche {
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid lightcoral;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.lien-moche:hover {
+  background-color: rgb(252, 69, 69);
+}
+
+.parent {
+  width: 400px;
+  height: 200px;
+  background-color: lightgreen;
+
+  /* position: relative; */
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.enfant {
+  width: 40px;
+  height: 40px;
+
+  /* position: fixed;
+  right: 50px;
+  bottom: 50px; */
+}
+
+.enfant:nth-child(1) {
+  background-color: cornflowerblue;
+  flex-basis: 0;
+  flex-grow: 1;
+  order: 3;
+}
+
+.enfant:nth-child(2) {
+  background-color: blueviolet;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.enfant:nth-child(3) {
+  background-color: darkgoldenrod;
+  flex-basis: 0;
+  flex-grow: 2;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: lightsalmon;
+}
+
+#first {
+  background-color: bisque;
+}

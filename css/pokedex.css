@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: lightgreen;
+  padding: 10px 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 2px solid teal;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+a:hover {
+  background-color: teal;
+  color: white;
+}
+
+nav div {
+  background-color: lightgrey;
+  width: 20px;
+  border-radius: 50%;
+
+  display: none;
+
+  transform: rotate(90deg);
+}
+
+nav div:hover {
+  border: 1px solid darkgrey;
+  cursor: pointer;
+}
+
+main {
+  height: calc(100vh - 50px);
+  background-color: lightgoldenrodyellow;
+  background-image: url("http://placekitten.com/1000");
+  background-size: cover;
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    background-color: lightcoral;
+  }
+
+  nav a {
+    display: none;
+  }
+
+  nav div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
